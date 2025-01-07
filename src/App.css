@@ -274,3 +274,109 @@ footer {
     margin-top: 1rem;
   }
 }
+
+/***** User Component Styles *****/
+
+/* Card styling */
+.card {
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Button styling */
+.btn {
+  display: inline-block;
+  padding: 0.5rem 1.5rem;
+  color: white;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Light button */
+.btn-light {
+  background-color: #e5e7eb;
+  transition: background-color 0.3s;
+}
+
+.btn-light:hover {
+  background-color: #d1d5db;
+}
+
+/* Dark button */
+.btn-dark {
+  background-color: #1f2937;
+  transition: background-color 0.3s;
+}
+
+.btn-dark:hover {
+  background-color: #111827;
+}
+
+/* Grid layout with 2 columns */
+.grid-2 {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+/* Responsive for medium screens and up */
+@media (min-width: 768px) {
+  .grid-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Center content vertically and horizontally */
+.all-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Rounded profile image */
+.round-img {
+  border-radius: 50%;
+  border: 4px solid #e5e7eb;
+}
+
+/* Badge styling */
+.badge {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+/* Badge colors */
+.badge-primary {
+  background-color: #3b82f6;
+  color: white;
+}
+
+.badge-success {
+  background-color: #10b981;
+  color: white;
+}
+
+.badge-light {
+  background-color: #e5e7eb;
+  color: #1f2937;
+}
+
+.badge-dark {
+  background-color: #1f2937;
+  color: white;
+}
+
+/* Margin utility */
+.my-1 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
